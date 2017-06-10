@@ -45,6 +45,10 @@ $ git remote -v
 ```
 $ heroku logs
 ```
+- 如果出现报错，查看报错信息。
+```
+$ heroku logs | grep -i error
+```
 
 <br/>
 
