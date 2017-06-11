@@ -1,3 +1,4 @@
+
 # **Heroku 部署上線**
 
 * 創建 Heroku App，並同時命名。
@@ -49,7 +50,14 @@ $ heroku logs
 ```
 $ heroku logs | grep -i error
 ```
-
+- 断开与heroku app的远端链接
+```
+git remote rm heroku
+```
+- 将当前repo重新连接app
+```
+heroku git:remote -a 替换heroku-app的名字
+```
 <br/>
 
 # **Heroku 正式端資料**
@@ -146,6 +154,8 @@ $ heroku access:remove <電子郵件地址>
 ------
 
 <br/>
+
+heroku 上面关于git的说明文档： https://devcenter.heroku.com/articles/git
 
 有任何開發上的問題，都可以透過 Slack：xbearx1987、anndo-2 找到吉米或我，我們很樂意為你解答。
 
